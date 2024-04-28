@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.Home{
+    background-image: url(images/slider/slider-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    text-align: center ;
+    color: #ffffff;
+}
+.Home_color{
+    background-color: rgba(0, 0, 0,0.8);
+    height: 100vh;
+    overflow: hidden;
+    padding: 25% 0;
+
+}
+.Home h1{
+    color:#ff305b;
+    font-size: 70px;
+    padding: 10px;
+}
+.Home p{
+font-size: 26px;
+}
+.navigation_bar{
+    width: 90%;
+    position: absolute;
+    padding: 20px 0;
+    text-align: right;
+    margin: auto;
+}
+.navigation_bar span{
+padding: 0 10px;
+font-size: 20px;
+}
+.navigation_bar .Fokir{
+    color:#ff305b;
+    font-size: 28px;
+    position: absolute;
+    left: 10%;
+}
+.clearfix{
+    clear: both;
+}
+.About_all{
+    width: 50%;
+    float: left;
+    padding: 5%;
+}
+.About_al img{
+    width: 100%;
+}
+.About_al{
+    width: 50%;
+    height: 50vh;
+    float: left;
+    padding: 5%;
+    position: relative;
+}
+.img_About{
+    width: 50%;
+    height: 90%;
+    position: absolute; 
+    top: 15%;
+    right: 15%;
+    border: 8px #555555 solid ;
+    border-radius: 5px;
+}
+#img_About{
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    overflow: hidden;
+}
+.img_hov{
+    width: 355px;
+    height: 440px;
+    position: absolute;
+    top: 440px;
+    right: 0px;
+    background-color:rgba(0, 0, 0,0.5);
+    transition: 1s top ;
+}
+.About_al:hover .img_hov
+ {
+    top: 0px;
+}
+.About_all h2{
+    font-size: 40px;
+    padding: 10px ;
+    position: relative; 
+}
+.About_all h2::before{
+    content: "";
+    width: 5px;
+    height: 45%;
+background-color: #ff305b;
+position: absolute;
+top: 20px;
+left: 0;
+}
+.About_all p{
+    padding: 15px;
+    font-size: 20px; 
+}
+.line {
+    border-bottom: #999999 3px dotted;
+}
+.About_Name button{
+    background-color: #ff305b;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 15px 5px;
+    font-size: 20px;
+}
+.Name{
+    width: 50%;
+    float: left;
+}
+.test{
+    width: 200px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 120px;
+    left: 44%;
+}
+.testa{
+    width: 100px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 115px;
+    left:47%;
+}
+.testb{
+    width: 100px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 124px;
+    left: 47%;
+}
+
+.Services{
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f1f1f1;
+    position: relative;
+}
+.Services h2
+{
+    font-size: 50px;
+    padding: 10px;    
+}
+.Our_Services
+{
+    width: 90%;
+    padding: 50px;
+    margin: auto;
+}
+.UI{
+    width: 25%;
+    float: left;
+    transition: 1s background-color ;
+}
+.UI p{
+    padding: 5px;
+    font-size: 20px;
+
+}
+.bold{
+    font-size: 30px;
+    font-weight: bold;
+}
+.UI:hover{
+    background-color: white;
+}
+
+.Portfolio{
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+.Portfolio h2{
+    font-size: 50px;
+    padding: 10px;    
+}
+.Our_Portfolio{
+    width: 90%;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+}
+.Our_Portfolio span{
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Portfolio_img{
+    padding: 50px 0 ;
+}
+.img_move{
+    width: 33.33%;
+    float: left;
+    padding: 10px ;
+    position: relative;
+}
+.img_move img{
+    width: 100%;
+}
+.img_hover{
+    width: 95.5%;
+    height: 93%;
+    background-color: rgba(0, 0, 0,0.4);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    transform: 2s opacity ;
+}
+.img_move:hover .img_hover{
+    opacity: 1;
+}
+.Feedback{
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+    
+}
+.Feedback h2{
+    font-size: 50px;
+    padding: 10px;    
+}
+.Feedback_All{
+    width: 60%;
+    margin:  20px auto;
+    text-align: left;
+    padding: 50px;
+    position: relative;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+.Feedback_All:after{
+    content: '';
+    background: #ff305b;
+    width: 75%;
+    height: 150%;
+    position: absolute;
+    transform: rotate(45deg) translate(-112%,0);
+}
+.Feedback_img{
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+}
+.Feedback_img img{
+    width: 40%;
+    border-radius: 50%;
+}
+.Feedback_cover{
+    width: 80%;
+    float: right;
+}
+.Feedback_cover p{
+    padding: 5px;
+    font-size: 20px;
+}
+.Blog{
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+    background-color: #f1f1f1;
+}
+.Blog h2{
+    font-size: 50px;
+    padding: 10px;    
+}
+.Blog_all{
+    width: 80%;
+    padding: 50px;
+    margin: auto;
+    text-align: left;
+}
+.Blog_move{
+width: 50%;
+float: left;
+padding: 0 20px;
+}
+.Blog_move img{
+    width: 100%;
+}
+.Blog_move p{
+    padding: 5px;
+    font-size: 20px;
+}
+.Blog_color{
+    background-color: white;
+}
+.Contact_Us{
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+.Contact_Us h2{
+    font-size: 50px;
+    padding: 10px;    
+}
+.ttesta{
+    width: 100px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 116.5px;
+    left:47%;
+}
+.ttestb{
+    width: 100px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    top: 124.5px;
+    left: 47%;
+}
+.Contact_all{
+    width: 60%;
+    padding: 50px;
+    margin: auto;
+    text-align: left; 
+}
+.Namea{
+    width: 45%;
+    padding: 15px;
+    margin: 10px;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+}
+.Subject{
+    width: 94%;
+    padding: 15px;
+    margin: 5px;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+}
+.Message{
+    width: 94%;
+    padding: 15px;
+    margin: 5px;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+}
+.Contact_all button{
+    padding: 15px;
+    margin: 5px;
+    border: 5px #ff305b solid;
+    border-radius: 20px;
+    background-color: #ff305b;
+    color: white;
+}
+.end{
+    text-align: center;
+    background-color: #333333;
+    padding: 50px;
+    
+}
+.end span{
+    color: #ff305b;
+    padding: 5px;
+    font-size: 20px;
+}
+.end p{
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+}
